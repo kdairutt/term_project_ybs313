@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 public class Musteri {   
+    private static int idSayaci = 0;
     private int musteriID;
     private String ad;
     private String soyad;
@@ -10,7 +11,7 @@ public class Musteri {
     private Siparis siparis;
     
     public Musteri() {
-        musteriID = 0;
+        musteriID = ++idSayaci;
         ad = "";
         soyad = "";
         kartNo = ""; 

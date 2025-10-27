@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 public class Yonetici {
+    private static int idSayaci = 0;
     private int yoneticiID;
     private String ad;
     private String soyad;
@@ -7,7 +8,7 @@ public class Yonetici {
     private ArrayList<Personel> personel;
     
     public Yonetici() {
-        yoneticiID = 0;
+        yoneticiID = ++idSayaci;
         ad = "";
         soyad = "";
         personel = new ArrayList<>();
