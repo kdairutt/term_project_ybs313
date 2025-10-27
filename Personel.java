@@ -10,7 +10,7 @@ public class Personel {
         soyad = "";
     }
     
-    public int getID() {
+    public int getPersonelID() {
         return personelID;
     }
     

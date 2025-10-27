@@ -30,6 +30,10 @@ public class Siparis {
         urunListesi.add(urun);
     }
     
+    public void urunSil(Urun urun) {
+        urunListesi.remove(urun);
+    }
+    
     public ArrayList<Urun> getUrunListesi() {
         return urunListesi;
     }
@@ -41,7 +45,6 @@ public class Siparis {
     
     public String getPersonelInfo() {
         return String.format("Personelin Numarası: %s, Adı: %s, Soyadı: %s",
-        personel.getID(), personel.getAd(), personel.getSoyad());
+        personel.getPersonelID(), personel.getAd(), personel.getSoyad());
     }
-    
 }
