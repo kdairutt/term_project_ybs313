@@ -9,4 +9,24 @@ public class Personel {
         ad = "";
         soyad = "";
     }
+    
+    public int getID() {
+        return personelID;
+    }
+    
+    public void setAd(String p_ad) {
+        ad = p_ad;
+    }
+    
+        public String getAd() {
+        return ad;
+    }
+    
+    public void setSoyad(String p_soyad) {
+        soyad = p_soyad;
+    }
+    
+    public String getSoyad() {
+        return soyad;
+    }
 }

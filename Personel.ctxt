@@ -2,4 +2,14 @@
 comment0.target=Personel
 comment1.params=
 comment1.target=Personel()
-numComments=2
+comment2.params=
+comment2.target=int\ getID()
+comment3.params=p_ad
+comment3.target=void\ setAd(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getAd()
+comment5.params=p_soyad
+comment5.target=void\ setSoyad(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getSoyad()
+numComments=7
