@@ -69,7 +69,7 @@ public class Musteri {
         for (Urun urun : urunListesi) {
             if (urun.getAd().equalsIgnoreCase(p_urunAd)) {
                 return String.format(
-                    "Ürün Adı: %s, Ürün kategorisi: %s, Ürün Fiyatı: %s TL",
+                    "Ürün Adı: %s | Ürün kategorisi: %s | Ürün Fiyatı: %s TL |",
                     urun.getAd(),
                     urun.getKategori(),
                     urun.getFiyat()
@@ -77,7 +77,7 @@ public class Musteri {
             }
         }
         
-    return "Aranan ürün bulunamadı.";
+        return "Ürün bilgisi bulunamadı.";
     }
     
     public void siparisOlustur() {

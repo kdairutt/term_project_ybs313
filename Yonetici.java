@@ -56,7 +56,7 @@ public class Yonetici {
         StringBuilder yazici = new StringBuilder();
         
         for (Siparis siparis : siparisler) {
-            yazici.append(String.format("Sipariş Numarası: %s, Sipariş Tutarı: %s, Personel: %s \n",
+            yazici.append(String.format("Sipariş Numarası: %s | Sipariş Tutarı: %s | Personel: %s |\n",
             siparis.getSiparisID(),
             siparis.getTutar(),
             siparis.getPersonelInfo()
@@ -64,7 +64,7 @@ public class Yonetici {
             );
             
             for(Urun urun : siparis.getUrunListesi()) {
-                yazici.append(String.format(" -- Ürün: %s | Kategori: %s | Fiyat: %s TL \n",
+                yazici.append(String.format(" -- Ürün: %s | Kategori: %s | Fiyat: %s TL |\n",
                 urun.getAd(),
                 urun.getKategori(),
                 urun.getFiyat()
@@ -81,7 +81,7 @@ public class Yonetici {
         StringBuilder yazici = new StringBuilder();
         
         for (Personel personel : personeller) {
-            yazici.append(String.format("Personel Numarası: %s | Personel Adı: %s | Personel Soyadı: %s",
+            yazici.append(String.format("Personel Numarası: %s | Personel Adı: %s | Personel Soyadı: %s |",
             personel.getPersonelID(),
             personel.getAd(),
             personel.getSoyad()

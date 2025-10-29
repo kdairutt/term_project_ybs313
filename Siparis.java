@@ -44,7 +44,7 @@ public class Siparis {
     }
     
     public String getPersonelInfo() {
-        return String.format("Personelin Numarası: %s, Adı: %s, Soyadı: %s",
+        return String.format("Personelin Numarası: %s | Adı: %s | Soyadı: %s |",
         personel.getPersonelID(), personel.getAd(), personel.getSoyad());
     }
 }
